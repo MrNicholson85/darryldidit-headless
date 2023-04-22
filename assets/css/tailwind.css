@@ -1,0 +1,28 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+body {
+    @apply
+        bg-black
+        text-white
+}
+
+h1, .h1 {
+
+}
+
+h2, .h2 {
+    
+}
+
+h3, .h3 {
+    @apply
+        font-bold
+        text-base
+        uppercase
+        leading-6
+        tracking-wide
+        mb-4
+}
