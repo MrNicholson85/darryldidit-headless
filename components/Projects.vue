@@ -1,11 +1,11 @@
 <template>
-  <div class="grid grid-cols-2 gap-7">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-6 lg:mx-auto">
     <div v-for="project in projects">
       <NuxtLink :to="project.slug">
         <div>
           <div>
             <div
-              class="bg-[#5c3d99] h-[450px] w-full gap-7 bg-top bg-cover"
+              class="project_card bg-[#5c3d99] h-[450px] relative grid place-content-center w-full gap-7 bg-top bg-cover"
               :style="{
                 backgroundImage:
                   'url(' +
@@ -13,9 +13,22 @@
                     .project_image.sizes.large +
                   ')',
               }"
-            ></div>
+            >
+              <div
+                class="project_item absolute place-content-center h-full w-full bg-[#000000a4]"
+              >
+                <h3>{{ project.title.rendered }}</h3>
+                <div
+                  class="text-center py-4 w-32 mx-auto"
+                  :style="{
+                    backgroundColor: `${project.acf.project.project_media.project_color}`,
+                  }"
+                >
+                  View View
+                </div>
+              </div>
+            </div>
           </div>
-          <h3>{{ project.title.rendered }}</h3>
         </div>
       </NuxtLink>
     </div>
@@ -30,4 +43,13 @@ const { data: projects } = await useFetch(
 //console.log(projects);
 </script>
 
-<style scoped></style>
+<style scoped>
+.project_card .project_item {
+  display: none;
+  transition: ease-in-out all 0.1s;
+}
+
+.project_card:hover .project_item {
+  display: grid;
+}
+</style>
