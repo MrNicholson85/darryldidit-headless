@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div v-for="project in projects" class="mx-6">
+    <div v-for="project in projects" class="mx-6 lg:mx-auto">
       <div
         v-if="project.slug == slug"
         class="grid gap-y-10 md:flex justify-between gap-x-6"

@@ -6,10 +6,11 @@
       <h1 class="mb-3">{{ pages[4].acf.components[0].hero_title }}</h1>
       <p>{{ pages[4].acf.components[0].hero_content }}</p>
       <div
-        class="border-[2px] mx-auto md:mx-0 hover:bg-[#ffffff91] border-white w-[200px] text-center py-4 mt-[25px] md:mt-[50px]"
+        class="border-[2px] mx-auto md:mx-0 hover:bg-[#ffffff91] border-white w-[200px] text-center mt-[25px] md:mt-[50px]"
         v-if="pages[4].acf.components[0].resume_download.url"
       >
         <a
+          class="py-4 grid"
           :href="pages[4].acf.components[0].resume_download.url"
           target="_blank"
           download
@@ -18,7 +19,7 @@
       </div>
     </div>
     <div
-      class="grayscale hover:grayscale-0 h-[400px] md:h-[650px] w-full bg-center bg-cover rounded-lg"
+      class="grayscale hover:grayscale-0 h-[400px] md:h-[650px] w-full bg-center bg-cover rounded-lg transition-[grayscale];"
       :style="{
         backgroundImage: 'url(' + pages[4].acf.components[0].hero_image + ')',
       }"
