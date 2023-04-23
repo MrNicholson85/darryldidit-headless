@@ -1,7 +1,10 @@
 <template>
   <div class="container">
-    <div v-for="project in projects">
-      <div v-if="project.slug == slug" class="flex justify-between gap-x-6">
+    <div v-for="project in projects" class="mx-6">
+      <div
+        v-if="project.slug == slug"
+        class="grid gap-y-10 md:flex justify-between gap-x-6"
+      >
         <div class="grid gap-y-[30px]">
           <div
             v-for="image in project.acf.project.project_media.project_images"
