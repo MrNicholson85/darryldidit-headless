@@ -1,15 +1,15 @@
 <template>
-  {{ pages[4] }}
-  <div class="grid grid-cols-2 h-[400px] place-content-center">
-    <div class="">
-      <h1 class="mb-3">Hi, I'm Darry Nicholson</h1>
-      <p>
-        A Front-end Web Developer, with a passion for creating customn Wordpress
-        themes who moonlights as a Vue/Nuxt Developer, with a secret idenity of
-        a VR/AR Developer. <span>#getSOME!</span>
-      </p>
+  <div class="grid grid-cols-2 gap-8 place-content-center my-14">
+    <div class="grid place-content-center">
+      <h1 class="mb-3">{{ pages[4].acf.components[0].hero_title }}</h1>
+      <p>{{ pages[4].acf.components[0].hero_content }}</p>
     </div>
-    <div>image</div>
+    <div
+      class="grayscale h-[650px] w-full bg-center bg-cover rounded-lg"
+      :style="{
+        backgroundImage: 'url(' + pages[4].acf.components[0].hero_image + ')',
+      }"
+    ></div>
   </div>
 </template>
 
