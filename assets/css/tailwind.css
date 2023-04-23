@@ -9,8 +9,23 @@ body {
         text-white
 }
 
-h1, .h1 {
+p, .p {
+    @apply
+        text-lg
+        leading-8
+}
 
+p span, .p span {
+    @apply
+        font-bold
+}
+
+h1, .h1 {
+    @apply
+        font-bold
+        uppercase
+        tracking-widest
+        text-3xl
 }
 
 h2, .h2 {

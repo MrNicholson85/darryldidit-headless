@@ -1,24 +1,26 @@
 <template>
-  <header
-    class="flex container justify-between h-[70px] items-center mx-6 lg:mx-auto"
-  >
-    <div class="font-bold uppercase">
-      <NuxtLink :to="`/`">Darryl Nicholson</NuxtLink>
-    </div>
-    <div class="flex justify-between w-[153px] md:w-[142px]">
-      <a href="https://github.com/MrNicholson85" target="_blank"
-        ><img :src="GitIcon"
-      /></a>
-      <a
-        href="https://www.frontendmentor.io/profile/MrNicholson85"
-        target="_blank"
-        ><img :src="FemIcon"
-      /></a>
-      <a href="https://www.linkedin.com/in/darrylnicholson/" target="_blank"
-        ><img :src="LdIcon"
-      /></a>
-    </div>
-  </header>
+  <div class="container">
+    <header
+      class="grid gap-y-3 md:flex justify-center md:justify-between h-[70px] items-center md:mx-6 lg:mx-auto my-5 md:my-0"
+    >
+      <div class="font-bold uppercase">
+        <NuxtLink :to="`/`">Darryl Did It!</NuxtLink>
+      </div>
+      <div class="flex justify-between w-[153px] md:w-[142px]">
+        <a href="https://github.com/MrNicholson85" target="_blank"
+          ><img :src="GitIcon"
+        /></a>
+        <a
+          href="https://www.frontendmentor.io/profile/MrNicholson85"
+          target="_blank"
+          ><img :src="FemIcon"
+        /></a>
+        <a href="https://www.linkedin.com/in/darrylnicholson/" target="_blank"
+          ><img :src="LdIcon"
+        /></a>
+      </div>
+    </header>
+  </div>
 </template>
 
 <script setup>

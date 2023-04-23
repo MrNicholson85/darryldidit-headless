@@ -5,7 +5,7 @@
         <div>
           <div>
             <div
-              class="project_card bg-[#5c3d99] h-[450px] relative grid place-content-center w-full gap-7 bg-top bg-cover"
+              class="project_card bg-[#5c3d99] h-[260px] rounded-lg lg:h-[450px] relative grid place-content-center w-full gap-7 bg-top bg-cover"
               :style="{
                 backgroundImage:
                   'url(' +
