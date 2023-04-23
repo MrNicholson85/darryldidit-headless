@@ -1,11 +1,24 @@
 <template>
-  <div class="grid grid-cols-2 gap-8 place-content-center my-14">
-    <div class="grid place-content-center">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 mx-6 lg:mx-0 gap-8 place-content-center my-14"
+  >
+    <div class="grid text-center md:text-left place-content-center">
       <h1 class="mb-3">{{ pages[4].acf.components[0].hero_title }}</h1>
       <p>{{ pages[4].acf.components[0].hero_content }}</p>
+      <div
+        class="border-[2px] mx-auto md:mx-0 hover:bg-[#ffffff91] border-white w-[200px] text-center py-4 mt-[25px] md:mt-[50px]"
+        v-if="pages[4].acf.components[0].resume_download.url"
+      >
+        <a
+          :href="pages[4].acf.components[0].resume_download.url"
+          target="_blank"
+          download
+          >Download Resume</a
+        >
+      </div>
     </div>
     <div
-      class="grayscale h-[650px] w-full bg-center bg-cover rounded-lg"
+      class="grayscale hover:grayscale-0 h-[400px] md:h-[650px] w-full bg-center bg-cover rounded-lg"
       :style="{
         backgroundImage: 'url(' + pages[4].acf.components[0].hero_image + ')',
       }"
