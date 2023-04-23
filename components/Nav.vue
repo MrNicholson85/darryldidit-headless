@@ -1,11 +1,11 @@
 <template>
-  <header class="flex container justify-between h-[70px] items-center">
+  <header
+    class="flex container justify-between h-[70px] items-center mx-6 lg:mx-auto"
+  >
     <div class="font-bold uppercase">
       <NuxtLink :to="`/`">Darryl Nicholson</NuxtLink>
     </div>
-    <div
-      class="flex gap-6 md:gap-8 z-10 mx-auto md:mx-0 w-[153px] md:w-[192px] md:pr-[30px]"
-    >
+    <div class="flex justify-between w-[153px] md:w-[142px]">
       <a href="https://github.com/MrNicholson85" target="_blank"
         ><img :src="GitIcon"
       /></a>
