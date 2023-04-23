@@ -1,11 +1,9 @@
 <template>
-  <div class="flex justify-between my-10">
+  <div class="flex justify-between my-10 container">
     <div>
       © {{ new Date().getFullYear() }} Darryl Nicholson. All Rights Reserved.
     </div>
-    <div
-      class="flex gap-6 md:gap-8 z-10 mx-auto md:mx-0 w-[153px] md:w-[192px] md:pr-[30px]"
-    >
+    <div class="flex justify-between w-[153px] md:w-[142px]">
       <a href="https://github.com/MrNicholson85" target="_blank"
         ><img :src="GitIcon"
       /></a>
