@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <div v-for="project in projects" class="mx-6 lg:mx-auto">
+    <div v-for="project in projects" class="mx-6">
       <div v-if="project.slug == slug">
         <div class="relative">
           <div v-for="feat_image in project._embedded">
             <div
               v-if="feat_image[0].source_url"
-              class="h-[850px] bg-cover bg-top rounded-lg mb-8"
+              class="h-[430px] md:h-[850px] bg-cover bg-top rounded-lg mb-8"
               :style="{
                 backgroundImage: 'url(' + feat_image[0].source_url + ')',
               }"
@@ -25,7 +25,7 @@
               <img class="w-full" :src="image.project_image.sizes.large" />
             </div>
           </div>
-          <div class="w-[500px]">
+          <div class="md:w-[500px]">
             <h3>{{ project.title.rendered }}</h3>
             <div>
               {{ project.acf.project.project_content.project_description }}

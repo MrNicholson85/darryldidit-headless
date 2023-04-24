@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <header
-      class="grid gap-y-3 md:flex justify-center md:justify-between h-[70px] items-center md:mx-6 lg:mx-auto my-5 md:my-0"
+      class="grid gap-y-3 md:flex justify-center md:justify-between h-[70px] items-center md:mx-6 my-5 md:my-0"
     >
       <div class="font-bold uppercase">
         <NuxtLink :to="`/`">Darryl Did It!</NuxtLink>
