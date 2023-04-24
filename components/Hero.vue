@@ -19,7 +19,7 @@
       </div>
     </div>
     <div
-      class="grayscale hover:grayscale-0 h-[400px] md:h-[650px] w-full bg-center bg-cover rounded-lg transition-[grayscale];"
+      class="grayscale hover:grayscale-0 h-[400px] md:h-[430px] lg:h-[650px] w-full bg-center bg-cover rounded-lg transition-[grayscale];"
       :style="{
         backgroundImage: 'url(' + pages[4].acf.components[0].hero_image + ')',
       }"
