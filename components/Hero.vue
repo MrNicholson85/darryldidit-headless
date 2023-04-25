@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-1 md:grid-cols-2 mx-6 lg:mx-0 gap-8 place-content-center my-14"
+    class="grid grid-cols-1 md:grid-cols-2 mx-6 gap-8 place-content-center my-14"
   >
     <div class="grid text-center md:text-left place-content-center">
       <h1 class="mb-3">{{ pages[4].acf.components[0].hero_title }}</h1>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div
-      class="grayscale hover:grayscale-0 h-[400px] md:h-[430px] lg:h-[650px] w-full bg-center bg-cover rounded-lg transition-[grayscale];"
+      class="hero_image"
       :style="{
         backgroundImage: 'url(' + pages[4].acf.components[0].hero_image + ')',
       }"

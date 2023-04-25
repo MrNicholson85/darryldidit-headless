@@ -6,14 +6,14 @@
           <div v-for="feat_image in project._embedded">
             <div
               v-if="feat_image[0].source_url"
-              class="h-[430px] md:h-[850px] bg-cover bg-top rounded-lg mb-8"
+              class="project_feat_image"
               :style="{
                 backgroundImage: 'url(' + feat_image[0].source_url + ')',
               }"
             ></div>
           </div>
         </div>
-        <div class="grid gap-y-10 md:flex justify-between gap-x-6">
+        <div class="project_content">
           <div class="grid gap-y-[30px]">
             <div
               v-for="image in project.acf.project.project_media.project_images"
@@ -32,7 +32,7 @@
             </div>
             <div class="flex gap-5 mt-10">
               <div
-                class="border-[#38a3a5] border-b-[2px] pb-[5px] font-semibold"
+                class="project_list_styles"
                 v-for="skill in project.acf.project.project_content
                   .project_items"
                 :style="{
@@ -44,7 +44,7 @@
             </div>
             <div v-if="project.acf.project.project_content.project_cta.url">
               <a
-                class="mt-10 grid w-full text-center h-[50px] bg-[#38a3a5] place-content-center text-base hover:bg-[#2b7d7f] uppercase font-bold"
+                class="project_btn"
                 :style="{
                   backgroundColor: `${project.acf.project.project_media.project_color}`,
                 }"

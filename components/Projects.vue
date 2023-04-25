@@ -1,6 +1,6 @@
 <template>
   <h1 class="text-center pb-20">What I've Done!</h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-6 lg:mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-6">
     <div v-for="project in projects">
       <NuxtLink :to="project.slug">
         <div>

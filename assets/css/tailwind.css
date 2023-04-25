@@ -35,9 +35,66 @@ h2, .h2 {
 h3, .h3 {
     @apply
         font-bold
-        text-base
+        text-xl
         uppercase
         leading-6
         tracking-wide
         mb-4
+}
+
+.hero_image {
+    @apply
+        grayscale
+        bg-fixed 
+        hover:grayscale-0 
+        h-[400px] 
+        md:h-[430px] 
+        lg:h-[850px]
+        bg-no-repeat
+        bg-[top_right]
+        bg-[length:50%]
+        rounded-lg
+}
+
+.project_feat_image {
+    @apply
+        h-[430px]
+        lg:h-[850px]
+        bg-cover
+        bg-fixed
+        bg-top
+        rounded-lg
+        mb-8
+}
+
+.project_content {
+    @apply
+        grid
+        gap-y-10 
+        md:flex 
+        justify-between 
+        gap-x-6
+}
+
+.project_list_styles {
+    @apply
+        border-[#38a3a5] 
+        border-b-[2px] 
+        pb-[5px] 
+        font-semibold
+}
+
+.project_btn {
+    @apply
+        mt-10 
+        grid 
+        w-full
+        text-center
+        h-[50px] 
+        bg-[#38a3a5]
+        place-content-center 
+        text-base 
+        hover:bg-[#2b7d7f] 
+        uppercase 
+        font-bold
 }
