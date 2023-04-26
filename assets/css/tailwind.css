@@ -45,15 +45,14 @@ h3, .h3 {
 .hero_image {
     @apply
         grayscale
-        bg-fixed 
         hover:grayscale-0 
         h-[400px] 
         md:h-[430px] 
         lg:h-[850px]
         bg-no-repeat
-        bg-[top_right]
-        bg-[length:50%]
+        bg-[top_left]
         rounded-lg
+        bg-cover
 }
 
 .project_feat_image {
@@ -64,7 +63,7 @@ h3, .h3 {
         bg-fixed
         bg-top
         rounded-lg
-        mb-8
+        mb-[50px]
 }
 
 .project_content {
@@ -73,7 +72,7 @@ h3, .h3 {
         gap-y-10 
         md:flex 
         justify-between 
-        gap-x-6
+        gap-x-[50px]
 }
 
 .project_list_styles {

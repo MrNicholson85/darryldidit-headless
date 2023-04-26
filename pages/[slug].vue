@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="project_content">
-          <div class="grid gap-y-[30px]">
+          <div class="grid gap-y-[50px]">
             <div
               v-for="image in project.acf.project.project_media.project_images"
               class="bg-[#5c3d99] project_bg rounded-lg overflow-hidden"
