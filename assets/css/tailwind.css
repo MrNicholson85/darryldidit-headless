@@ -35,7 +35,7 @@ h3,
 }
 
 .project_feat_image {
-    @apply h-[430px] lg:h-[850px] bg-cover bg-fixed bg-top rounded-lg mb-[50px]
+    @apply h-[430px] xl:h-[850px] bg-cover xl:bg-fixed bg-center xl:bg-top rounded-lg mb-[50px]
 }
 
 .project_content {
