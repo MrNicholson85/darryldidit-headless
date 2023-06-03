@@ -39,8 +39,6 @@
 const { data: projects } = await useFetch(
   "https://darryldidit.com/wp-json/wp/v2/project?_embed"
 );
-
-//console.log(projects);
 </script>
 
 <style scoped>

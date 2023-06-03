@@ -4,96 +4,48 @@
 
 
 body {
-    @apply
-        bg-black
-        text-white
+    @apply bg-black text-white
 }
 
-p, .p {
-    @apply
-        text-lg
-        leading-8
+p,
+.p {
+    @apply text-lg leading-8
 }
 
-p span, .p span {
-    @apply
-        font-bold
+p span,
+.p span {
+    @apply font-bold
 }
 
-h1, .h1 {
-    @apply
-        font-bold
-        uppercase
-        tracking-widest
-        text-3xl
+h1,
+.h1 {
+    @apply font-bold uppercase tracking-widest text-3xl
 }
 
-h2, .h2 {
-    
-}
+h2,
+.h2 {}
 
-h3, .h3 {
-    @apply
-        font-bold
-        text-xl
-        uppercase
-        leading-6
-        tracking-wide
-        mb-4
+h3,
+.h3 {
+    @apply font-bold text-xl uppercase leading-6 tracking-wide mb-4
 }
 
 .hero_image {
-    @apply
-        grayscale
-        hover:grayscale-0 
-        h-[400px] 
-        md:h-[430px] 
-        lg:h-[850px]
-        bg-no-repeat
-        bg-[top_left]
-        rounded-lg
-        bg-cover
+    @apply grayscale hover:grayscale-0 h-[400px] md:h-[430px] lg:h-[850px] bg-no-repeat bg-[top_left] rounded-lg bg-cover
 }
 
 .project_feat_image {
-    @apply
-        h-[430px]
-        lg:h-[850px]
-        bg-cover
-        bg-fixed
-        bg-top
-        rounded-lg
-        mb-[50px]
+    @apply h-[430px] lg:h-[850px] bg-cover bg-fixed bg-top rounded-lg mb-[50px]
 }
 
 .project_content {
-    @apply
-        grid
-        gap-y-10 
-        md:flex 
-        justify-between 
-        gap-x-[50px]
+    @apply grid gap-y-10 md:flex justify-between gap-x-[50px]
 }
 
 .project_list_styles {
-    @apply
-        border-[#38a3a5] 
-        border-b-[2px] 
-        pb-[5px] 
-        font-semibold
+    @apply border-[#38a3a5] border-b-[2px] pb-[5px] font-semibold
 }
 
 .project_btn {
-    @apply
-        mt-10 
-        grid 
-        w-full
-        text-center
-        h-[50px] 
-        bg-[#38a3a5]
-        place-content-center 
-        text-base 
-        hover:bg-[#2b7d7f] 
-        uppercase 
-        font-bold
+    @apply mt-10 grid w-full text-center h-[50px] bg-[#38a3a5] place-content-center text-base hover:bg-[#2b7d7f] uppercase font-bold
 }
