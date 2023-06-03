@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div v-for="project in projects" class="mx-6">
+    <div v-for="project in projects" v-bind:key="project.id" class="mx-6">
       <div v-if="project.slug == slug">
         <div class="relative">
-          <div v-for="feat_image in project._embedded">
+          <div v-for="feat_image in project._embedded" v-bind:key="feat_image.id">
             <div
               v-if="feat_image[0].source_url"
               class="project_feat_image"
@@ -17,6 +17,7 @@
           <div class="grid gap-y-[50px]">
             <div
               v-for="image in project.acf.project.project_media.project_images"
+              v-bind:key="image.id"
               class="bg-[#5c3d99] project_bg rounded-lg overflow-hidden"
               :style="{
                 backgroundColor: `${project.acf.project.project_media.project_color}`,
@@ -35,6 +36,7 @@
                 class="project_list_styles"
                 v-for="skill in project.acf.project.project_content
                   .project_items"
+                  v-bind:key="skill.id"
                 :style="{
                   borderColor: `${project.acf.project.project_media.project_color}`,
                 }"
