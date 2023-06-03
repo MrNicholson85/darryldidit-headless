@@ -31,7 +31,7 @@ h3,
 }
 
 .hero_image {
-    @apply grayscale hover:grayscale-0 h-[400px] md:h-[430px] lg:h-[850px] bg-no-repeat bg-[top_left] rounded-lg bg-cover
+    @apply grayscale hover:grayscale-0 h-[400px] md:h-[430px] xl:h-[850px] bg-no-repeat bg-center xl:bg-[top_left] rounded-lg bg-cover
 }
 
 .project_feat_image {
